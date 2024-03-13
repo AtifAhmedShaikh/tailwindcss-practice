@@ -31,26 +31,25 @@ Tailwind CSS is a utility-first CSS framework that provides low-level utility cl
 2. Add content in tailwind.config.js
 
    ```bash
-     content: ["./src/**/*.{html,js}"],
-
+   content: ["./src/**/*.{html,js}"],
    ```
 
-3. Add This in index.css
+3. Create input.css file inside the src folder src/input.css
+
+4. Add This in your input.css file
    ```bash
    @tailwind base;
    @tailwind components;
    @tailwind utilities;
    ```
-4. Create input.css file inside the src folder src/input.css
+5. Generate the output.css file by running this command
 
    ```bash
    npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-   this will generate the output.css file
-
    ```
 
-5. Now Add Link tag in your HTML file
+6. Now Add Link tag in your HTML file
 
-```bash
-<link href="./output.css" rel="stylesheet">
-```
+   ```bash
+   <link href="./output.css" rel="stylesheet">
+   ```
